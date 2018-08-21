@@ -10,7 +10,7 @@ l.append(ob) 将元素 ob 添加到列表 l 的最后。
 
 4
 l.extend(lst) 将序列 lst 的元素依次添加到列表 l 的最后，作用相当于 l += lst。
-
+l.extend([2,3,4])
 5
 l.insert(idx, ob) 在索引 idx 处插入 ob ，之后的元素依次后移。
 
