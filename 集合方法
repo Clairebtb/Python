@@ -6,5 +6,23 @@ s.add(a)
 跟列表的extend方法类似，用来向集合添加多个元素。
 s.update(seq)
 将seq中的元素添加到s中。
+t.update([5, 6, 7])
 
 3
+s.remove(ob)
+从集合s中移除元素ob，如果不存在会报错。
+
+4
+s.dicard(ob)
+作用与 remove 一样，但是当元素在集合中不存在的时候不会报错。
+
+5
+s.pop()
+由于集合没有顺序，不能像列表一样按照位置弹出元素，所以`pop` 方法删除并返回集合中任意一个元素，如果集合中没有元素会报错。
+t.pop()
+
+6
+difference_update方法
+a.difference_update(b)
+从a中去除所有属于b的元素：
+
