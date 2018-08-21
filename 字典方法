@@ -1,0 +1,11 @@
+1
+`d.get(key, default = None)`
+返回字典中键 `key` 对应的值，如果没有这个键，返回 `default` 指定的值（默认是 `None` ）。
+
+2
+`d.pop(key, default = None)`
+删除并返回字典中键 key 对应的值，如果没有这个键，返回 default 指定的值（默认是 None ）。
+
+3
+与列表一样，del 函数可以用来删除字典中特定的键值对
+del a["one"]
