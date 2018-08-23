@@ -11,8 +11,7 @@ t.update([5, 6, 7])
 3
 s.remove(ob)
 从集合s中移除元素ob，如果不存在会报错。
-
-4
+ 4
 s.dicard(ob)
 作用与 remove 一样，但是当元素在集合中不存在的时候不会报错。
 
@@ -25,4 +24,26 @@ t.pop()
 difference_update方法
 a.difference_update(b)
 从a中去除所有属于b的元素：
+
+
+
+#########################################
+1
+s=set(x for x in rangr(1,10) if)
+or
+s={x for in if}
+or 
+s=set(iterable)
+or
+s={1，2，3}
+
+
+2
+frozenset  同上 set换成frozenset  但是没有直接定义即s={1，2，3}和s={x for in if}  
+
+3
+直接s={}会被识别为字典
+
+
+
 
