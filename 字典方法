@@ -2,6 +2,8 @@
 `d.get(key, default = None)`
 返回字典中键 `key` 对应的值，如果没有这个键，返回 `default` 指定的值（默认是 `None` ）。
 
+d.getdefaultkey(key[,default=none])
+get基础上再在原dict中加一个键值对
 2
 `d.pop(key, default = None)`
 删除并返回字典中键 key 对应的值，如果没有这个键，返回 default 指定的值（默认是 None ）。
@@ -28,3 +30,7 @@ in 可以用来判断字典中是否有某个特定的键
 
 `d.items()` 
 返回一个由所有键值对元组组成的列表；
+
+7
+d.clear()
+清空所有键值 但字典本身还存在
