@@ -1,0 +1,47 @@
+import time   或者   from time import xxxxxxx，xxx等函数（便可以直接调用函数而不用先写模块）
+
+1.时间戳
+time.time()
+
+2.时间元组
+time.localtime()
+
+3.格式化时间
+time.ctime()
+or
+time.asctime(time.localtime())
+or
+time.strftime("%Y/y--%M--%D %h:%m:%s",time.localtime())
+
+4.转回去
+pt=time.strptime("          ","%Y/y--%M--%D %h:%m:%s")   回到元组
+time.mktime(pt)     从元组转回时间戳
+
+5.CPU时间
+start=time.clock()
+xxxxxx
+end=time.clock()
+
+6.休眠
+time.sleep(1)
+
+7.日历
+import calender
+print(calender.month())
+
+8.datetime
+import datetime
+datetime.datetime.today/now()
+模块       类         函数
+
+
+9.n天之后
+t=datetime.datetime.now()
+result=t+datetime.timedelta(9)
+
+10.时间间隔
+first=datetime.datetime(2018,8,23,21,23,22)
+second=....
+delta=f-s
+delta  天时分秒
+delta.total_seconds()总秒数
