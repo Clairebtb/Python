@@ -1,0 +1,101 @@
+1
+偏函数
+
+
+def test1(a, b, c,d=1):
+    print(a+b+c+d)
+    return (a, b, c, d)
+
+def test2(a,b,c=5,d=2):
+    r=test1(a,b,c,d)
+    return r
+
+r=test2(1,2)
+
+print(r)
+
+for x in r:
+    print(x,end=' ')
+
+print("-".join(str(i) for i in r))
+
+
+
+或
+
+
+import functools
+newfunc = functools.partial(test1,c=5)
+
+
+
+2
+匿名函数
+lambda 参数：表达式
+适用于一些简单情况
+
+3
+返回函数
+def f1(flag)：
+    def sum():
+    def minus()：
+    if flag ==
+        return sum
+    elif flag==
+        return minus
+        
+print(f1()())
+
+
+4
+高阶函数
+参数里有函数
+
+5
+n闭包
+ 
+def test():
+    num=10
+    def test2:
+        print(num)
+    return test2
+    
+result=test()
+result()
+
+闭包局部函数中不改变变量本身的值
+若想改变 加 nonlocal 
+
+
+6
+装饰器
+
+def checklogin(func):
+    def inner():
+        print("check")
+        func()
+    return inner
+
+语法糖   相当于通过checklogin来改变函数 在其中加一些东西
+@checklogin
+def fss():
+    print("xxx")
+@checklogin
+def ftp():
+    print("xxx")
+
+
+
+#业务逻辑
+
+if choice==1:
+    fss()
+elif choice==2:
+    ftp()
+
+
+
+
+
+
+
